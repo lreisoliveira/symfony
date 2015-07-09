@@ -1,0 +1,16 @@
+app:
+    resource: "@AppBundle/Controller/"
+    type:     annotation
+rest:
+    resource: "@RestBundle/Controller/"
+    type:     annotation
+restget:
+    pattern:  /rest/server/get
+    defaults: { _controller: RestBundle:Server:get}
+    requirements:
+        _method: GET   
+restpost:
+    pattern:  /rest/server/get
+    defaults: { _controller: RestBundle:Server:get}
+    requirements:
+        _method: POST           
